@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * void print_alphabet_x10(void) - prints alphabet x10 to stdout
+ * print_alphabet_x10 - prints alphabet x10 to stdout
  *
  * return - Doesnt return anything
  */
@@ -15,5 +15,4 @@ void print_alphabet_x10(void)
 		print_alphabet();
 		i++;
 	}
-	return;
 }
