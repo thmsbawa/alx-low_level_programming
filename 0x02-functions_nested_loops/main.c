@@ -2,9 +2,6 @@
 
 int main(void)
 {
-	int r;
-
-	r = _islower('H');
-	_putchar(r + '0');
+	print_alphabet_x10();
 	return (0);
 }
