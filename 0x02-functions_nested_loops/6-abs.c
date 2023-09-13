@@ -2,8 +2,8 @@
 
 /**
  * _abs - prints the absolute value of an int
- *
- * return: returns an int
+ * @n: is a parameter for the function _abs
+ * Return: returns an int
  */
 int _abs(int n)
 {
