@@ -1,7 +1,10 @@
 #include "main.h"
+#include <stdio.h>
 
 int main(void)
 {
-	print_alphabet_x10();
+	
+	jack_bauer();
+	_putchar('\n');
 	return (0);
 }
