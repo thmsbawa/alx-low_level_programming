@@ -1,10 +1,11 @@
 #include "main.h"
+#include <stdio.h>
 
 int main(void)
 {
-	char h = 'T';
-
-	_putchar('0' + _isdigit(h));
-	print_most_numbers();
+	
+	print_square(2);
+	print_square(10);
+	print_square(0);
 	return (0);
 }
