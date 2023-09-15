@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- * _isupper - checks if character is is a digit
+ * _isdigit - checks if character is is a digit
  * @c: is checked to see if its a digit
  * Return: 1 if c is a digit and 0 if otherwise
  */
