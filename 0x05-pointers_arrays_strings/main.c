@@ -3,10 +3,14 @@
 
 int main(void)
 {
-	char *str;
+	int array[4];
 
-	str = "0123456789";
-	puts_half(str);
+	array[0] = 98;
+	array[1] = 402;
+	array[2] = -198;
+	array[3] = 298;
+
+	print_array(array, 4);
 
 	return 0;
 }
