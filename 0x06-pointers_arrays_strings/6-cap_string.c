@@ -16,7 +16,7 @@ char *cap_string(char *str)
 
 	for (i = 0; i < n; i++)
 	{
-		if (ispace(str[i]) || str[i] == ',' || str[i] == ';' || str[i] == '.'
+		if (isspace(str[i]) || str[i] == ',' || str[i] == ';' || str[i] == '.'
 		|| str[i] == '!' || str[i] == '?' || str[i] == '"' || str[i] == '(' ||
 		str[i] == ')' || str[i] == '{' || str[i] == '}')
 		{
