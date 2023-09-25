@@ -22,7 +22,7 @@ char *cap_string(char *str)
 		{
 			capitalize = 1;
 		}
-		else if (capitalize == 1 && isalpha(str[i])
+		else if (capitalize == 1 && isalpha(str[i]))
 		{
 			str[i] = toupper(str[i]);
 			capitalze = 0;
