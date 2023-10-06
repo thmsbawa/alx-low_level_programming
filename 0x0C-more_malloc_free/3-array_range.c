@@ -7,7 +7,7 @@
   */
 int _abs(int num)
 {
-	num < 0 ? (num *= -1) : (num = nnum);
+	num < 0 ? (num *= -1) : (num = num);
 	return (num);
 }
 /**
