@@ -34,20 +34,22 @@ int main(int argc, char *argv[])
 	if (argc == 2)
 	{
 		coins = 0;
-
-		for (cents; cents >= 25; cents -= 25)
+		for (; cents >= 25; cents -= 25)
 			coins++;
-		for (cents; cents >= 10; cents -= 10)
+		for (; cents >= 10; cents -= 10)
 			coins++;
-		for (cents; cents >= 5; cents -= 5)
+		for (; cents >= 5; cents -= 5)
 			coins++;
-		for (cents; cents >= 2; cents -= 2)
+		for (; cents >= 2; cents -= 2)
 			coins++;
-		for (cents; cents >= 1; cents -= 1)
+		for (; cents >= 1; cents -= 1)
 			coins++;
 		printf("%d\n", coins);
 	}
 	else
+	{
 		printf("Error\n");
 		return (1);
+	}
+	return (0);
 }
