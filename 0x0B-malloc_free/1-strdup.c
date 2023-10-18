@@ -1,5 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
+#include <stddef.h>
 /**
  * _strdup - copies a string into a new buffer
  * @str: string to be copied
@@ -8,28 +10,16 @@
 char *_strdup(char *str)
 {
 	char *ptr;
-	unsigned int i, j;
+	size_t len;
 
 	if (str == NULL)
 		return (NULL);
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		;
-	}
-		if (i < 1)
-		{
-			return (NULL);
-		}
-	ptr = malloc((i + 1) * sizeof(char));
+	len = strlen(str);
+	ptr = (char *)malloc((len * sizeof(char));
 	if (ptr == NULL)
 	{
-		free(ptr);
 		return (NULL);
 	}
-	for (j = 0; j <= i; j++)
-	{
-		ptr[j] = str[j];
-	}
-	ptr[j] = '\0';
+	strcpy(ptr, str);
 	return (ptr);
 }
