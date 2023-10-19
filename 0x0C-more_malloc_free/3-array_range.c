@@ -1,15 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-/**
-  * _abs - gets absolute value
-  * @num: number to be calculated
-  * Return: absolute value of the number
-  */
-int _abs(int num)
-{
-	num < 0 ? (num *= -1) : (num == num);
-	return (num);
-}
+
 /**
   * array_range - creates an array of integers
   * @min: minimum value
@@ -26,14 +17,14 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 	range = max - min + 1;
-	ptr = malloc(range * sizeof(*ptr));
+	ptr = malloc(range * sizeof(int));
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < range; min++, i++)
+	for (i = min; i <= max; i++)
 	{
-		ptr[i] = min;
+		ptr[i - min] = i;
 	}
 	return (ptr);
 }
