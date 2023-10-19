@@ -25,20 +25,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	ptr = (char *)malloc(sizeof(char) * len);
 	if (ptr == NULL)
 		return (NULL);
-	while (*s1)
-	{
-		*ptr = *s1;
-		ptr++;
-		s1++;
-	}
-	while (*s2 && n > 0)
-	{
-		*ptr = *s2;
-		ptr++;
-		s2++;
-		n--;
-	}
-	*ptr = '\0';
+	/*copying s1 into ptr*/
+	strcpy(ptr, s1);
+	/*concatinating s2 into ptr*/
+	strncat(ptr, s2, (n >= strlen(s2) ? strlen(s2) : n));
 
 	return (ptr);
 }
