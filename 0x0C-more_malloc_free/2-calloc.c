@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdlib.h>i
 /**
   * _calloc - allocates memory for an array
   * @nmemb: array of elements
@@ -19,7 +19,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < nmemb; i++)
+	for (i = 0; i < (rmemb * size); i++;)
 	{
 		ptr[i] = 0;
 	}
