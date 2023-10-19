@@ -21,9 +21,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	len = 1 + strlen(s1) + ((n >= strlen) ? strlen(s2) : n);
+	len = 1 + strlen(s1) + ((n >= strlen(s2)) ? strlen(s2) : n);
 	ptr = (char *)malloc(sizeof(char) * len);
-	if (len == NULL)
+	if (ptr == NULL)
 		return (NULL);
 	while (*s1)
 	{
